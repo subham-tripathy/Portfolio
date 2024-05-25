@@ -1,32 +1,25 @@
 import React from 'react'
 import ProjectCard from './ProjectCard'
 import projectPic1 from '../images/projects/1.webp';
+import projectPic2 from '../images/projects/2.webp';
 
 
 const ProjectData = [
   {
-    title: "Data Harmony",
-    desciption: "Data Harmony Description Here...........",
-    image: projectPic1,
-    previewURL: "https://google.com",
-  },
-  {
-    title: "EduMatch",
-    desciption: "EduMatch Description Here...........",
-    image: projectPic1,
-    previewURL: "https://google.com",
-  },
-  {
-    title: "Desi Mart",
-    desciption: "Desi Mart Description Here...........",
-    image: projectPic1,
-    previewURL: "https://google.com",
-  },
-  {
+    id: 1,
     title: "CinePhile",
     desciption: "CinePhile: Your ultimate movie destination. Search films, TV series, and explore the hottest releases in our Trending and Popular sections. Elevate your cinematic experience with CinePhile's curated content. 🍿🎬",
     image: projectPic1,
+    gitURL: "https://github.com/subham-tripathy/CinePhile",
     previewURL: "https://bit.ly/cine-phile",
+  },
+  {
+    id: 2,
+    title: "Library Management System",
+    desciption: "The Library Management System project is a software solution designed to efficiently organize and manage library resources. It automates tasks such as cataloging, borrowing, and tracking book availability for streamlined library operations.",
+    image: projectPic2,
+    gitURL: "https://github.com/subham-tripathy/LibraryManagementSystem",
+    previewURL: "https://bit.ly/LibraryManagementSystemProject",
   },
 ]
 
@@ -47,6 +40,7 @@ const ProjectsSection = () => {
                   title={project.title}
                   imageURL={project.image}
                   description={project.desciption}
+                  gitURL={project.gitURL}
                   previewURL={project.previewURL}
                 />
               )
