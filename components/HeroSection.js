@@ -2,7 +2,7 @@
 
 import Image from 'next/image'
 import React from 'react'
-import myPic from '../images/mypic.webp';
+import myPic from '../images/mypic.png';
 import { TypeAnimation } from 'react-type-animation';
 
 const HeroSection = () => {
